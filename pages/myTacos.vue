@@ -13,7 +13,7 @@
       aka="taco.aka"
       meat="taco.meat"
       region="taco.region"
-      imageURL="taco.imageURL"
+      imageURL="taco.image"
     ></Taco>
   </div>
 </template>
