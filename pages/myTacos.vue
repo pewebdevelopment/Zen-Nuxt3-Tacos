@@ -9,11 +9,11 @@
     <Taco
       v-for="taco in ourTacosList"
       :key="taco.name"
-      name="taco.name"
-      aka="taco.aka"
-      meat="taco.meat"
-      region="taco.region"
-      imageURL="taco.image"
+      :name="taco.name"
+      :aka="taco.aka"
+      :meat="taco.meat"
+      :region="taco.region"
+      :imageURL="taco.image"
     ></Taco>
   </div>
 </template>

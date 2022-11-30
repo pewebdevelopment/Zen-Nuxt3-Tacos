@@ -4,7 +4,7 @@
       class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700"
     >
       <a href="#">
-        <img class="rounded-t-lg" src="" alt="" />
+        <img class="rounded-t-lg" :src="props.imageURL" alt="" />
       </a>
 
       <div class="p-5">
@@ -68,12 +68,6 @@ const props = defineProps({
     required: true,
   },
 });
-
-const myURL = ref(props.imageURL);
-// myURL = props.imageURL;
-console.log(props.imageURL);
-
-console.log(myURL);
 </script>
 
 <style lang="scss" scoped></style>
