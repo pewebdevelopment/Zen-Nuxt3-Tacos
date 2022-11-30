@@ -2,7 +2,7 @@
   <h1 class="text-2xl text-white text-center mx-auto p-4 bg-gray-900">
     My Tacos
   </h1>
-  <div class="bg-gray-900 mx-auto text-white text-center">
+  <div class="bg-gray-900 mx-auto text-white text-center p-10">
     <Taco
       v-for="taco in ourTacosList"
       :key="taco.name"
