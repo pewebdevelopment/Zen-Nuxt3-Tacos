@@ -1,13 +1,12 @@
 <template>
   <div>
-    Hello Taco-Component
     <div
       class="max-w-sm bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700"
     >
       <a href="#">
-        <img class="rounded-t-lg" :src="URL" alt="" />
+        <img class="rounded-t-lg" src="" alt="" />
       </a>
-      <!--
+
       <div class="p-5">
         <a href="#">
           <h5
@@ -39,7 +38,7 @@
             ></path>
           </svg>
         </a>
-      </div> -->
+      </div>
     </div>
   </div>
 </template>
@@ -70,8 +69,11 @@ const props = defineProps({
   },
 });
 
-let URL = props.imageURL;
-console.log(URL);
+const myURL = ref(props.imageURL);
+// myURL = props.imageURL;
+console.log(props.imageURL);
+
+console.log(myURL);
 </script>
 
 <style lang="scss" scoped></style>
