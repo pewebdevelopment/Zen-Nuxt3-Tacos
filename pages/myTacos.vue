@@ -1,19 +1,30 @@
 <template>
-  <div>
-    <Taco
-      v-for="taco in tacosList"
+  <div class="bg-slate-900 h-screen m-0">
+    <h1
+      class="text-2xl text-white text-center mx-auto m-2 p-4 bg-gray-900 rounded-lg"
+    >
+      My Tacos
+    </h1>
+
+    <!-- <Taco
+      v-for="taco in tacosList.value"
       :key="taco.name"
       name="taco.name"
       aka="taco.aka"
       meat="taco.meat"
       region="taco.region"
       imageURL="taco.imageURL"
-    ></Taco>
+    ></Taco> -->
   </div>
 </template>
 
 <script setup>
-import tacosList from "@configs/tacosData.js";
+import { ref } from "vue";
+//import tacos from "@/configs/tacosData.js";
+// import Taco from "@/components/Taco.vue";
+// console.log(tacosList);
+// return {
+// tacosList,
+// };
+// const tacosList = tacos;
 </script>
-
-<style lang="scss" scoped></style>

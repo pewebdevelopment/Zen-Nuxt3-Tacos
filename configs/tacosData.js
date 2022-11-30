@@ -1,4 +1,4 @@
-const tacos = [
+export const tacos = [
   {
     name: "al pastor",
     aka: "tacos de adobada",
@@ -47,5 +47,3 @@ const tacos = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Tacos_de_suadero.jpg/1280px-Tacos_de_suadero.jpg",
   },
 ];
-
-export default tacosList;
