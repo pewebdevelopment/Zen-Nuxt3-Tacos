@@ -1,22 +1,18 @@
 <template>
-  <div class="bg-slate-900 m-0">
-    <h1
-      class="text-2xl text-white text-center mx-auto m-2 p-4 bg-gray-900 rounded-lg"
-    >
-      My Tacos
-    </h1>
-    <div class="bg-gray-900 mx-auto text-white text-center">
-      <Taco
-        v-for="taco in ourTacosList"
-        :key="taco.name"
-        :name="taco.name"
-        :aka="taco.aka"
-        :meat="taco.meat"
-        :region="taco.region"
-        :imageURL="taco.image"
-        class="flex justify-center m-4"
-      ></Taco>
-    </div>
+  <h1 class="text-2xl text-white text-center mx-auto p-4 bg-gray-900">
+    My Tacos
+  </h1>
+  <div class="bg-gray-900 mx-auto text-white text-center">
+    <Taco
+      v-for="taco in ourTacosList"
+      :key="taco.name"
+      :name="taco.name"
+      :aka="taco.aka"
+      :meat="taco.meat"
+      :region="taco.region"
+      :imageURL="taco.image"
+      class="flex justify-center mb-5"
+    ></Taco>
   </div>
 </template>
 
