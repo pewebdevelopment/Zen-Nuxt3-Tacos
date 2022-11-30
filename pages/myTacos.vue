@@ -21,11 +21,10 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+// import { ref } from "vue";
 import tacosList from "@/configs/tacosData.js";
 import Taco from "@/components/Taco.vue";
 console.log(tacosList);
 
 const ourTacosList = tacosList;
-const count = ref(0);
 </script>
