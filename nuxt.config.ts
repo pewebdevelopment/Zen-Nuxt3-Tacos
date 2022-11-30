@@ -3,10 +3,9 @@
 
 export default defineNuxtConfig({
   css: ["@/assets/css/styles.css"],
- 
+  alias: {
+    "class-validator": "class-validator/cjs/index.js",
+  },
 
-  modules: [
-
-    "@nuxtjs/tailwindcss"
-  ]
+  modules: ["@nuxtjs/tailwindcss"],
 });
