@@ -6,25 +6,24 @@
       My Tacos
     </h1>
 
-    <!-- <Taco
-      v-for="taco in tacosList.value"
+    <Taco
+      v-for="taco in ourTacosList"
       :key="taco.name"
       name="taco.name"
       aka="taco.aka"
       meat="taco.meat"
       region="taco.region"
       imageURL="taco.imageURL"
-    ></Taco> -->
+    ></Taco>
   </div>
 </template>
 
 <script setup>
 import { ref } from "vue";
 import tacosList from "@/configs/tacosData.js";
-// import Taco from "@/components/Taco.vue";
-// console.log(tacosList);
-// return {
-// tacosList,
-// };
-// const tacosList = tacos;
+import Taco from "@/components/Taco.vue";
+console.log(tacosList);
+
+const ourTacosList = tacosList;
+const count = ref(0);
 </script>
