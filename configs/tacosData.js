@@ -1,4 +1,4 @@
-export const tacos = [
+const tacos = [
   {
     name: "al pastor",
     aka: "tacos de adobada",
@@ -34,7 +34,7 @@ export const tacos = [
     name: "tacos dorados",
     aka: "golden tacos",
     meat: "shredded chicken",
-    region: "",
+    region: "The World",
     image:
       "https://www.maricruzavalos.com/wp-content/uploads/2020/07/rolled_taquitos_dorados_with_chicken.webp",
   },
@@ -47,3 +47,5 @@ export const tacos = [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Tacos_de_suadero.jpg/1280px-Tacos_de_suadero.jpg",
   },
 ];
+
+export default tacos;

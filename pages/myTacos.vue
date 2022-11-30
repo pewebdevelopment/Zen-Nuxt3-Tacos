@@ -20,7 +20,7 @@
 
 <script setup>
 import { ref } from "vue";
-//import tacos from "@/configs/tacosData.js";
+import tacosList from "@/configs/tacosData.js";
 // import Taco from "@/components/Taco.vue";
 // console.log(tacosList);
 // return {
